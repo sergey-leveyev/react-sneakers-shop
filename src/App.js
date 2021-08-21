@@ -25,12 +25,18 @@ function App() {
 
       {/* CONTENT START */}
       <div className="content p-40">
-        <h1 className="mb-40">all shoe</h1>
+        <div className="d-flex align-center mb-40 justify-between">
+        <h1>all shoe</h1>
+        <div className="search-block d-flex">
+          <img src="/img/search.svg" alt="Search" />
+          <input placeholder="Search..." />
+        </div>
+        </div>
 
 <div className="d-flex">
           {/* CARD START */}
           <div className="card">
-          <img width={133} height={112} src="/img/sneakers/1.jpg" alt="" />
+          <img width={133} height={112} src="/img/sneakers/1.jpg" alt="shoe" />
           <h5>It is a long established fact that a reader</h5>
           <div className="d-flex justify-between align-center">
             <div className="d-flex flex-column">
