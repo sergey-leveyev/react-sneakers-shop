@@ -1,6 +1,50 @@
 function App() {
   return (
     <div className="wrapper clear">
+      <div className="overlay">
+        <div className="drawer">
+          <h2 className="mb-30">Cart</h2>
+
+          <div className="cartItem d-flex align-center  mb-20">
+            <div
+              style={{ backgroundImage: "url(/img/sneakers/1.jpg)" }}
+              className="cartItemImg"
+            ></div>
+
+            <div className="mr-20">
+              <p className="mb-5 flex">
+                Lorem Ipsum is simply dummy text of printing
+              </p>
+              <b>556 NIS</b>
+            </div>
+            <img
+              className="removeBtn"
+              src="/img/btn-remove.svg"
+              alt="btn-remove"
+            />
+          </div>
+
+          <div className="cartItem d-flex align-center mb-20">
+            <div
+              style={{ backgroundImage: "url(/img/sneakers/1.jpg)" }}
+              className="cartItemImg"
+            ></div>
+
+            <div className="mr-20">
+              <p className="mb-5 flex">
+                Lorem Ipsum is simply dummy text of printing
+              </p>
+              <b>556 NIS</b>
+            </div>
+            <img
+              className="removeBtn"
+              src="/img/btn-remove.svg"
+              alt="btn-remove"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* HEADER START */}
       <header className="d-flex justify-between align-center p-40">
         <div className="d-flex align-center">
@@ -26,72 +70,80 @@ function App() {
       {/* CONTENT START */}
       <div className="content p-40">
         <div className="d-flex align-center mb-40 justify-between">
-        <h1>all shoe</h1>
-        <div className="search-block d-flex">
-          <img src="/img/search.svg" alt="Search" />
-          <input placeholder="Search..." />
-        </div>
+          <h1>all shoe</h1>
+          <div className="search-block d-flex">
+            <img src="/img/search.svg" alt="Search" />
+            <input placeholder="Search..." />
+          </div>
         </div>
 
-<div className="d-flex">
+        <div className="d-flex">
           {/* CARD START */}
           <div className="card">
-          <img width={133} height={112} src="/img/sneakers/1.jpg" alt="shoe" />
-          <h5>It is a long established fact that a reader</h5>
-          <div className="d-flex justify-between align-center">
-            <div className="d-flex flex-column">
-              <span>price: </span>
-              <b>556 NIS.</b>
+            <div className="favorite">
+              <img src="/img/heart.svg" alt="heart" />
             </div>
-            <button className="button">
-              <img width={11} height={11} src="/img/plus.svg" alt="Plus" />
-            </button>
+            <img
+              width={133}
+              height={112}
+              src="/img/sneakers/1.jpg"
+              alt="shoe"
+            />
+            <h5>It is a long established fact that a reader</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>price: </span>
+                <b>556 NIS.</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src="/img/plus.svg" alt="Plus" />
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="card">
-          <img width={133} height={112} src="/img/sneakers/2.jpg" alt="" />
-          <h5>It is a long established fact that a reader</h5>
-          <div className="d-flex justify-between align-center">
-            <div className="d-flex flex-column">
-              <span>price: </span>
-              <b>556 NIS.</b>
+          <div className="card">
+            <img width={133} height={112} src="/img/sneakers/2.jpg" alt="" />
+            <h5>It is a long established fact that a reader</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>price: </span>
+                <b>556 NIS.</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src="/img/plus.svg" alt="Plus" />
+              </button>
             </div>
-            <button className="button">
-              <img width={11} height={11} src="/img/plus.svg" alt="Plus" />
-            </button>
           </div>
-        </div>
 
-        <div className="card">
-          <img width={133} height={112} src="/img/sneakers/3.jpg" alt="" />
-          <h5>It is a long established fact that a reader</h5>
-          <div className="d-flex justify-between align-center">
-            <div className="d-flex flex-column">
-              <span>price: </span>
-              <b>556 NIS.</b>
+          <div className="card">
+            <img width={133} height={112} src="/img/sneakers/3.jpg" alt="" />
+            <h5>It is a long established fact that a reader</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>price: </span>
+                <b>556 NIS.</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src="/img/plus.svg" alt="Plus" />
+              </button>
             </div>
-            <button className="button">
-              <img width={11} height={11} src="/img/plus.svg" alt="Plus" />
-            </button>
           </div>
-        </div>
 
-        <div className="card">
-          <img width={133} height={112} src="/img/sneakers/4.jpg" alt="" />
-          <h5>It is a long established fact that a reader</h5>
-          <div className="d-flex justify-between align-center">
-            <div className="d-flex flex-column">
-              <span>price: </span>
-              <b>556 NIS.</b>
+          <div className="card">
+            <img width={133} height={112} src="/img/sneakers/4.jpg" alt="" />
+            <h5>It is a long established fact that a reader</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>price: </span>
+                <b>556 NIS.</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src="/img/plus.svg" alt="Plus" />
+              </button>
             </div>
-            <button className="button">
-              <img width={11} height={11} src="/img/plus.svg" alt="Plus" />
-            </button>
           </div>
+          {/* CARD END */}
         </div>
-        {/* CARD END */}
-</div>
       </div>
       {/* CONTENT END */}
     </div>
