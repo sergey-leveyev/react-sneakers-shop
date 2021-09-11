@@ -3,7 +3,14 @@ function App() {
     <div className="wrapper clear">
       <div className="overlay">
         <div className="drawer">
-          <h2 className="mb-30">Cart</h2>
+          <h2 className="d-flex justify-between mb-30">
+            Cart
+            <img
+              className="removeBtn cu-p"
+              src="/img/btn-remove.svg"
+              alt="btn-remove"
+            />
+          </h2>
           <div className="items">
             <div className="cartItem d-flex align-center  mb-20">
               <div
@@ -57,7 +64,9 @@ function App() {
                 <b>30 NIS</b>
               </li>
             </ul>
-            <button>Buy</button>
+            <button className="greenButton">
+              Buy <img src="/img/arrow.svg" alt="Arrow" />
+            </button>
           </div>
         </div>
       </div>
